@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+@font-face {
+  font-family: "MadeEvolveSans";
+  font-weight: 100;
+  src: url("../../public/fonts/MadeEvolveSans/MADEEvolveSans-Thin.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSans";
+  font-weight: 300;
+  src: url("../../public/fonts/MadeEvolveSans/MADEEvolveSans-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "MadeEvolveSans";
+  font-weight: 500;
+  src: url("../../public/fonts/MadeEvolveSans/MADEEvolveSans-Medium.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSans";
+  font-weight: 700;
+  src: url("../../public/fonts/MadeEvolveSans/MADEEvolveSans-Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "MadeEvolveSansEVO";
+  font-weight: 100;
+  src: url("../../public/fonts/MadeEvolveSansEVO/MADEEvolveSansEVO-Thin.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSansEVO";
+  font-weight: 300;
+  src: url("../../public/fonts/MadeEvolveSansEVO/MADEEvolveSansEVO-Light.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSansEVO";
+  font-weight: 400;
+  src: url("../../public/fonts/MadeEvolveSansEVO/MADEEvolveSansEVO.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSansEVO";
+  font-weight: 500;
+  src: url("../../public/fonts/MadeEvolveSansEVO/MADEEvolveSansEVO-Medium.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MadeEvolveSansEVO";
+  font-weight: 700;
+  src: url("../../public/fonts/MadeEvolveSansEVO/MADEEvolveSansEVO-Bold.otf")
+    format("opentype");
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.4vw;
+  height: 0.8vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0057a7;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    display: none !important;
+  }
+}
