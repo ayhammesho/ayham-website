@@ -15,7 +15,7 @@ import NextUi from "./NEXT UI.svg";
 import NextJs from "./NEXTJS.svg";
 import NodeJs from "./NODEJS.svg";
 import Prisma from "./PRISMA.svg";
-import Reactjs from "./React.svg";
+import Reactjs from "./REACT.svg";
 import Redux from "./REDUX.svg";
 import Sass from "./SASS.svg";
 import SocketIo from "./SOCKET IO.svg";
