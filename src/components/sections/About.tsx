@@ -10,60 +10,81 @@ import Image from "next/image";
 import Skills from "@/components/ui/Skills";
 import AboutMe from "@/components/ui/AboutMe";
 import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Tooltip } from "@nextui-org/react";
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+
   return (
     <section
       ref={ref}
       id="aboutme"
-      className="container 2xl:max-w-[1440px]  xl:max-w-5xl mx-auto flex md:flex-row flex-col justify-center gap-12 xl:flex-nowrap flex-wrap py-36"
+      className="container max-w-[1440px]  mx-auto flex md:flex-row flex-col justify-center gap-12 xl:flex-nowrap flex-wrap py-36"
     >
-      <div
-        style={{
-          transform: isInView ? "none" : "translateX(-500px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        transition={{
+          duration: 1,
+          delay: 0.2,
+          type: "spring",
+          ease: [0.17, 0.55, 0.55, 1],
+          bounce: 0.3,
         }}
-        className="md:shadow-xl overflow-hidden shadow-sm bg-white/50 backdrop-blur-[12px] rounded-[20px] md:mx-0 mx-8 mb-0 self-start"
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="md:shadow-xl overflow-hidden shadow-sm bg-white/50 backdrop-blur-[12px] rounded-[20px] md:mx-0 mx-8 mb-0 self-stretch"
       >
         <Image
           src={ProfilePic}
-          className="  xl:mt-6 md:mt-5"
+          className="  xl:mt-6 md:mt-5 object-cover h-full"
           alt="Ayham Mesho - Front-End Developer"
         />
-      </div>
-      <div className="flex flex-col gap-5 ">
-        <AboutMe
-          style={{
-            transform: isInView ? "none" : "translatey(100px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 1,
+          delay: 1,
+          type: "spring",
+          bounce: 0.3,
+          ease: [0.17, 0.55, 0.55, 1],
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-5 "
+      >
+        <AboutMe />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{
+            duration: 1,
+            delay: 1.5,
+            ease: [0.17, 0.55, 0.55, 1],
+            type: "spring",
+            bounce: 0.3,
           }}
-        />
-        <div
-          style={{
-            transform: isInView ? "none" : "translatey(100px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
-          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           className="overflow-hidden md:shadow-xl bg-white/50 xl:backdrop-blur-[12px] xl:max-w-3xl    xl:p-8 p-6 px-5 md:rounded-[20px]"
         >
           <h3 className="text-primary-500 mb-3 font-medium md:text-3xl text-2xl font-madeEvolveSans">
             Skills I Know
           </h3>
           <Skills />
-        </div>
-        <div
-          style={{
-            transform: isInView ? "none" : "translatey(100px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{
+            duration: 1,
+            delay: 2,
+            ease: [0.17, 0.55, 0.55, 1],
+            type: "spring",
+            bounce: 0.3,
           }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           className="md:shadow-xl bg-white/50 xl:backdrop-blur-[12px] xl:max-w-3xl    xl:p-8 md:p-6  md:rounded-[20px]"
         >
           <h3 className="text-primary-500 font-medium md:text-3xl text-2xl font-madeEvolveSans px-5">
@@ -75,7 +96,7 @@ const About = () => {
               className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
             >
               <Image
-                className="!fill-primary-500 xl:w-auto md:w-[80px] w-[60px]"
+                className="!fill-primary-500 xl:w-auto sm:w-[80px] w-[50px]"
                 src={nodejs}
                 height={75}
                 alt="node js"
@@ -86,7 +107,7 @@ const About = () => {
               className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
             >
               <Image
-                className="!fill-primary-500 xl:w-auto md:w-[45px] w-8"
+                className="!fill-primary-500 xl:w-auto sm:w-[45px] w-8"
                 src={mongodb}
                 height={75}
                 alt="mongodb"
@@ -97,7 +118,7 @@ const About = () => {
               className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
             >
               <Image
-                className="!fill-primary-500 xl:w-auto md:w-[80px] w-[60px]"
+                className="!fill-primary-500 xl:w-auto sm:w-[80px] w-[50px]"
                 src={react}
                 height={75}
                 alt="react js"
@@ -108,15 +129,15 @@ const About = () => {
               className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
             >
               <Image
-                className="!fill-primary-500 xl:w-auto md:w-[146px] w-24"
+                className="!fill-primary-500 xl:w-auto sm:w-[146px] w-20"
                 src={express}
                 height={50}
                 alt="express js"
               />
             </Tooltip>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

@@ -238,7 +238,7 @@ const ArchiveProjects = () => {
       <div className=" text-center">
         <button
           onClick={() => setIsFiltered(!isFiltered)}
-          className="main-btn  px-4 py-2  border-4  border-primary-500 text-primary-500 rounded-lg font-madeEvolveSansEVO font-medium text-xl"
+          className="main-button px-4 py-2  border-4  border-primary-500 text-primary-500 rounded-lg font-madeEvolveSans font-medium text-xl"
         >
           {isFiltered ? "Show More" : "Show Less"}
         </button>

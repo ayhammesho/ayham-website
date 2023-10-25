@@ -13,7 +13,7 @@ const Clients = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <section className="container mx-auto   max-w-[1200px]  my-24">
+    <section className="container mx-auto   max-w-[1200px]  ">
       <HeadingSection>Happy Clients I&apos;ve worked with</HeadingSection>
       <AnimatePresence>
         <div className=" flex items-center justify-evenly flex-wrap gap-12 flex-col sm:flex-row">

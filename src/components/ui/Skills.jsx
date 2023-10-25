@@ -3,7 +3,7 @@
 import React from "react";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Bootstrap,
   ChackraUi,
@@ -161,31 +161,51 @@ const Skills = () => {
           content="Next JS"
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
-          <Image src={NextJs} alt="Next JS" />
+          <Image
+            src={NextJs}
+            alt="Next JS"
+            className="max-w-[45px] sm:max-w-none"
+          />
         </Tooltip>
         <Tooltip
           content="Typescript"
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
-          <Image src={Typescript} alt="Typescript" />
+          <Image
+            src={Typescript}
+            alt="Typescript"
+            className="max-w-[45px] sm:max-w-none"
+          />
         </Tooltip>
         <Tooltip
           content="Tailwind CSS"
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
-          <Image src={TailwindCSS} alt="Tailwind CSS" />
+          <Image
+            src={TailwindCSS}
+            alt="Tailwind CSS"
+            className="max-w-[45px] sm:max-w-none"
+          />
         </Tooltip>
         <Tooltip
           content="Node JS"
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
-          <Image src={NodeJs} alt="Node JS" />
+          <Image
+            src={NodeJs}
+            alt="Node JS"
+            className="max-w-[45px] sm:max-w-none"
+          />
         </Tooltip>
         <Tooltip
           content="Figma"
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
-          <Image src={figma} alt="Figma" />
+          <Image
+            src={figma}
+            alt="Figma"
+            className="max-w-[45px] sm:max-w-none hidden sm:block"
+          />
         </Tooltip>
         <Tooltip
           content="Gsap"
@@ -204,7 +224,7 @@ const Skills = () => {
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500 "
         >
           <Image
-            className="hidden sm:block"
+            className="hidden sm:block xl:hidden 2xl:block"
             src={FramerMotion}
             alt="Framer Motion"
           />
@@ -214,7 +234,7 @@ const Skills = () => {
           className="capitalize bg-primary-500 text-white dark:text-secondary-500 dark:bg-navyBlue-500"
         >
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer max-w-[45px] sm:max-w-none"
             onClick={() => onOpen()}
             src={dots}
             alt="skills- www.ayhammesho.com"
@@ -222,6 +242,7 @@ const Skills = () => {
         </Tooltip>
       </div>
       <Modal
+        data-lenis-prevent
         classNames={{
           body: "px-3 ",
 

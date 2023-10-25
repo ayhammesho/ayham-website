@@ -28,11 +28,11 @@ const Header = () => {
 
       <Navbar />
       <header id="home" className="h-screen flex items-center justify-center">
-        <div className="2xl:px-[30px] px-5 2xl:pr-[121px]  2xl:py-[50px] py-8 2xl:rounded-2xl bg-white/50  backdrop-blur-[12px] ">
+        <div className="xl:px-[30px] px-5 xl:pr-[121px]  xl:py-[50px] py-8 xl:rounded-2xl bg-white/50  backdrop-blur-[12px] ">
           <h5 className="text-primary-500 text-lg font-bold font-azeretMono pl-1 sm:tracking-[2px]">
             Hi, My Name is
           </h5>
-          <h1 className="2xl:text-8xl md:text-6xl min-[400px]:text-4xl text-3xl font-madeEvolveSansEVO font-bold">
+          <h1 className="2xl:text-7xl md:text-6xl min-[400px]:text-4xl text-3xl font-madeEvolveSansEVO font-bold">
             Ayham Mesho
             <br />
             <span className="text-primary-500 font-madeEvolveSans ">
@@ -46,7 +46,7 @@ const Header = () => {
           </p>
           <div className="flex gap-[30px] rounded-xl items-center">
             <Link
-              className="w-full sm:w-auto main-btn !px-4 !py-2  !border-4  border-primary-500 text-primary-500 !rounded-lg font-madeEvolveSansEVO font-medium xl:text-xl text-lg cursor-pointer"
+              className="w-full sm:w-auto main-button !px-4 !py-2 text-center  !border-4  border-primary-500 text-primary-500 !rounded-lg font-madeEvolveSansEVO font-medium xl:text-xl text-lg cursor-pointer"
               to={"work"}
               spy={true}
               smooth={true}
@@ -60,7 +60,7 @@ const Header = () => {
             </Link>
 
             <Link
-              className="text-slate-600 hidden sm:block cursor-pointer"
+              className="button font-semibold hidden sm:block"
               to={"aboutme"}
               spy={true}
               smooth={true}
@@ -70,7 +70,10 @@ const Header = () => {
               delay={500}
               isDynamic={true}
             >
-              About Me
+              <span class="actual-text">&nbsp;About&nbsp;Me</span>
+              <span aria-hidden="true" class="front-text">
+                &nbsp;About&nbsp;Me
+              </span>
             </Link>
           </div>
         </div>

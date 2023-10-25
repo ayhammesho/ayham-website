@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import quote from "@/assets/images/quote.svg";
 import razek from "@/assets/images/Razek Daoud.png";
+import khaled from "@/assets/images/Khaled Bzmawe.png";
 
 import {
   Navigation,
@@ -125,7 +126,7 @@ const Recommendation = () => {
               viewport={{ once: false }}
               className="md:basis-1/3  basis-1/6  relative after:bg-gradient-to-t  after:from-white after:to-transparent    after:w-full after:h-36 after:absolute after:-bottom-1 after:left-0 md:after:hidden"
             >
-              <Image className="mx-auto" src={razek} alt="razek daoud" />
+              <Image className="mx-auto" src={khaled} alt="razek daoud" />
             </motion.div>
             <div className="basis-2/3 !flex flex-col justify-center gap-7">
               <Image
@@ -163,9 +164,9 @@ const Recommendation = () => {
                 className="text-left px-0 pb-3 md:pb-0"
               >
                 <h4 className="text-primary-500 font-madeEvolveSans text-2xl font-bold md:mb-0 mb-1">
-                  Razek Daoud
+                  Khaked Bzmawe
                 </h4>
-                <h5 className="text-sm">Ceo at Razier</h5>
+                <h5 className="text-sm">Media Buyer</h5>
               </motion.div>
             </div>
           </SwiperSlide>

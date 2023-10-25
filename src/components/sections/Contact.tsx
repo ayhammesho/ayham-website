@@ -17,8 +17,11 @@ import {
 
 const Contact = () => {
   return (
-    <footer id="contact">
-      <div className="container mx-auto max-w-[800px] py-64 flex flex-col items-center justify-center px-12 ">
+    <footer
+      id="contact"
+      className="h-screen relative flex flex-col justify-center"
+    >
+      <div className="container mx-auto max-w-[800px] md:py-64  flex flex-col items-center justify-center px-12 ">
         <h5 className="font-bold text-primary-500 font-azeretMono text-lg mb-3">
           What&apos;s Next ?
         </h5>
@@ -32,12 +35,12 @@ const Contact = () => {
         </p>
         <Link
           href="mailto:ayhammesho@gmail.com"
-          className="main-btn !px-4 !py-2  !border-4  border-primary-500 text-primary-500 !rounded-lg font-madeEvolveSans font-medium xl:text-xl "
+          className="main-button !px-4 !py-2  !border-4  border-primary-500 text-primary-500 !rounded-lg font-madeEvolveSans font-medium  "
         >
           Say Hello
         </Link>
       </div>
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 absolute bottom-0 xl:left-1/2 xl:-translate-x-1/2">
         <div className="lg:hidden flex flex-wrap gap-0 justify-center mb-3 sm:max-w-md max-w-xs mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
