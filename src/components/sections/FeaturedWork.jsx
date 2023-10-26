@@ -36,8 +36,14 @@ const FeaturedWork = () => {
       <HeadingSection>Some things I&apos;ve built</HeadingSection>
 
       <motion.div
-        initial={{ opacity: 0, y: 200 }}
-        transition={{ duration: 2, delay: 0.2, type: "spring", bounce: 0.3 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.2,
+          type: "Tween",
+
+          ease: [0.17, 0.55, 0.55, 1],
+        }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className=" grid grid-cols-12 items-center lg:mb-24 mb-8 mx-5 relative"
@@ -97,8 +103,14 @@ const FeaturedWork = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 200 }}
-        transition={{ duration: 2, delay: 0.2, type: "spring", bounce: 0.3 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.2,
+          type: "Tween",
+
+          ease: [0.17, 0.55, 0.55, 1],
+        }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className=" grid grid-cols-12 items-center lg:mb-24 mb-8 mx-5 relative"

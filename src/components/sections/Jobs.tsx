@@ -1,44 +1,26 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, animate } from "framer-motion"; // @see https://www.framer.com/motion/
+import { motion } from "framer-motion";
 
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { Tabs, Tab } from "@nextui-org/react";
 import HeadingSection from "../ui/HeadingSection";
 import Link from "next/link";
-import { once } from "events";
 
 const Jobs = () => {
-  const [hello, setHello] = useState("");
-
-  const jobs = {
-    hidden: {
-      opacity: 0,
-      y: 200,
-      transition: {
-        duration: 0.1,
-        delay: 0,
-      },
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 2,
-        delay: 0.2,
-        type: "spring",
-        bounce: 0.3,
-      },
-    },
-  };
-
   return (
     <section id="experience" className="container mx-auto max-w-4xl py-36">
       <HeadingSection>Where I’ve Worked</HeadingSection>
       <motion.div
-        variants={jobs}
-        initial="hidden"
-        whileInView="show"
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.2,
+          type: "Tween",
+
+          ease: [0.17, 0.55, 0.55, 1],
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="flex md:flex-row flex-col xl:px-0 md:px-6  gap-10 "
       >
@@ -78,15 +60,15 @@ const Jobs = () => {
                 </h4>
                 <h6 className="text-sm text-slate-400">sep 2021 - present</h6>
               </div>
-              <ul className="text-slate-500 list-disc ml-4">
+              <ul className="text-slate-500 list-image-[url(../assets/images/arrow.png)] ml-4">
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Understanding client requirements, I work closely with
                     clients to understand their goals and requirements.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     I create a plan for the website&apos;s structure and design.
                     This involves creating wireframes or mockups of the
                     website&apos;s layout and design elements to ensure
@@ -94,21 +76,21 @@ const Jobs = () => {
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Developing the website: Once the design is finalized, I
                     begin coding the website for what fits the project
                     requirements.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     I ensure that the website is responsive and optimized for
                     search engines and that it meets web accessibility
                     standards.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     manage my schedule and workload effectively, and be able to
                     work independently without direct supervision.
                   </p>
@@ -139,39 +121,39 @@ const Jobs = () => {
                 </h4>
                 <h6 className="text-sm text-slate-400">sep 2022 - june 2023</h6>
               </div>
-              <ul className="text-slate-500 list-disc ml-4">
+              <ul className="text-slate-500 list-image-[url(../assets/images/arrow.png)] ml-4">
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Building responsive and interactive user interfaces using
                     React JS.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Collaborating with designers, developers, and other
                     stakeholders to ensure the best possible user experience.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Developing reusable and modular components for use across
                     multiple projects.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Conducting code reviews and providing constructive feedback
                     to other developers.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Staying up-to-date with emerging trends and best practices
                     in Front-End development and React JS in particular.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Participating in agile development processes, including
                     daily standups, sprint planning, and retrospectives.
                   </p>
@@ -205,27 +187,27 @@ const Jobs = () => {
                   april 2022 - july 2022
                 </h6>
               </div>
-              <ul className="text-slate-500 list-disc ml-4">
+              <ul className="text-slate-500 list-image-[url(../assets/images/arrow.png)] ml-4">
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Integrating the front-end with the back-end built on
                     Laravel.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Work with various third-party libraries and plugins to
                     implement features.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     This project was an excellent opportunity for me to develop
                     my skills as a front-end developer using Vue.js Framework.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Communicating with the whole team and joining the daily
                     meetings using Slack.
                   </p>

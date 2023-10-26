@@ -70,7 +70,7 @@ const About = () => {
           className="overflow-hidden md:shadow-xl bg-white/50 xl:backdrop-blur-[12px] xl:max-w-3xl    xl:p-8 p-6 px-5 md:rounded-[20px]"
         >
           <h3 className="text-primary-500 mb-3 font-medium md:text-3xl text-2xl font-madeEvolveSans">
-            Skills I Know
+            Skills I Work With
           </h3>
           <Skills />
         </motion.div>

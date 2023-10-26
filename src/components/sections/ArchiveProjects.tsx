@@ -138,8 +138,8 @@ const ArchiveProjects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   delay: 0.1 * i + 1,
-                  duration: 0.3,
-                  ease: "easeOut",
+                  duration: 0.2,
+                  ease: [0.17, 0.55, 0.55, 1],
                 }}
                 className="shadow-lg hover:shadow-xl rounded-xl xl:col-span-4 md:col-span-6 sm:col-span-6  col-span-9 hover:!-translate-y-2 transition-all group   p-8"
                 key={project.name}
@@ -190,8 +190,8 @@ const ArchiveProjects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   delay: 0.1 * i,
-                  duration: 0.3,
-                  ease: "easeOut",
+                  duration: 0.2,
+                  ease: [0.17, 0.55, 0.55, 1],
                 }}
                 className="shadow-lg hover:shadow-xl rounded-xl xl:col-span-4 md:col-span-6 sm:col-span-6  col-span-9 hover:!-translate-y-2 transition-all group   p-8"
               >

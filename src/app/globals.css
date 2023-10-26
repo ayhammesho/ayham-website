@@ -199,8 +199,8 @@
   background-clip: text;
   background-size: 200%;
   overflow: hidden;
-  transition: all 1s;
-  animation: 8s ani infinite;
+  transition: all 0.3s;
+  animation: 0.6s ani infinite;
   border-bottom: 2px solid transparent;
 }
 

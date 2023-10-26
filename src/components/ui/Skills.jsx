@@ -33,6 +33,8 @@ import {
   Wordpress,
 } from "../../assets/svgs/skills/export";
 
+import question from "@/assets/svgs/question.svg";
+
 import dots from "../../assets/svgs/dots.svg";
 
 import {
@@ -48,6 +50,7 @@ import {
 
 const Skills = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isClicked, setIsClicked] = React.useState(false);
   const skills = [
     {
       name: "Bootstrap",
@@ -263,7 +266,7 @@ const Skills = () => {
               <ModalHeader className="flex flex-col gap-1">
                 My Skills
               </ModalHeader>
-              <ModalBody>
+              <ModalBody className="relative">
                 <div className="grid grid-cols-3 md:grid-cols-6 md:grid-rows-5 gap-5 justify-items-center overflow-x-hidden">
                   {skills.map((skill, i) => (
                     <motion.div
@@ -285,7 +288,24 @@ const Skills = () => {
                   ))}
                 </div>
               </ModalBody>
-              <ModalFooter></ModalFooter>
+              <ModalFooter className=" hidden lg:flex items-end p-3">
+                <p
+                  className={`text-[16px] p-3 px-3 bg-primary-500 text-white  rounded-lg transition-all  ${
+                    isClicked ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  I may not know every technology out there, but my enthusiasm
+                  for learning and ability to quickly adapt ensure that I&apos;m
+                  always expanding my technical horizons.
+                </p>
+                <div className=" right-4 bottom-3 w-10 cursor-pointer transition-transform ">
+                  <Image
+                    onClick={() => setIsClicked(!isClicked)}
+                    src={question}
+                    alt="question"
+                  />
+                </div>
+              </ModalFooter>
             </>
           )}
         </ModalContent>

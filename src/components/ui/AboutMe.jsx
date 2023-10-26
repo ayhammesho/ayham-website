@@ -60,9 +60,9 @@ const AboutMe = () => {
         <ModalContent>
           {(onClose) => (
             <div className="flex   ">
-              <div className="min-w-[450px]   hidden md:block">
+              <div className="min-w-[450px] hidden md:block">
                 <Image
-                  className="max-w-md  object-contain opacity-0 transition-opacity"
+                  className="max-w-md  object-contain opacity-0 transition-opacity "
                   src={Me}
                   alt="Ayham Mesho - www.ayhammesho.com"
                   onLoadingComplete={(image) =>
@@ -76,38 +76,33 @@ const AboutMe = () => {
                 </h3>
                 <ScrollShadow className=" h-[500px]">
                   <div className="pr-3">
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Dolor esse sed dolorem rerum nulla consectetur, iure
-                      reprehenderit quae voluptatibus enim consequatur
-                      consequuntur, debitis, dignissimos possimus optio
-                      quibusdam quaerat similique accusamus! Aliquam magni ab
-                      cumque, quam doloremque ipsum voluptatem iste sunt
-                      exercitationem consequatur minima blanditiis eveniet
-                      provident non quidem consequuntur qui vel fugiat voluptate
-                      neque aut quibusdam? Inventore reprehenderit voluptate
-                      blanditiis! Corporis eligendi perspiciatis laboriosam aut
-                      mollitia quis numquam quae quibusdam et obcaecati iure eos
-                      inventore, hic veniam aliquid ratione doloremque
-                      consequatur natus repellendus non nam, fuga atque
-                      reprehenderit. Laudantium, sed! Enim eum magni sint
-                      voluptatum soluta possimus mollitia tempore perspiciatis.
-                      Corporis perspiciatis natus atque officia consequuntur
-                      voluptates commodi obcaecati? Eum cum ipsa excepturi
-                      aspernatur laudantium aperiam quo nobis iste quae. Animi,
-                      doloremque quod nam beatae ullam magni sapiente?
-                      Temporibus, soluta modi ut ipsum voluptatum similique
-                      ipsam eligendi perspiciatis laboriosam aut mollitia quis
-                      numquam quae quibusdam et obcaecati iure eos inventore,
-                      hic veniam aliquid ratione doloremque consequatur natus
-                      repellendus non nam, fuga atque reprehenderit. Laudantium,
-                      sed! Enim eum magni sint voluptatum soluta possimus
-                      mollitia tempore perspiciatis. Corporis perspiciatis natus
-                      atque officia consequuntur voluptates commodi obcaecati?
-                      Eum cum ipsa excepturi aspernatur laudantium aperiam quo
-                      nobis iste quae. Animi, doloremque quod nam beatae ullam
-                      magni sapiente? Temporibus, soluta modi ut ipsum
-                      voluptatum similique ipsam
+                    <p className="text-lg">
+                      Ever since I stumbled upon my first website as a child, I
+                      was fascinated by the magic of how beautiful designs and
+                      interactive elements came to life on screen. It
+                      wasn&apos;t just about how things looked; it was how they
+                      felt and functioned that captivated me.
+                      <br />
+                      My journey started with a simple HTML page I built in high
+                      school. As I delved deeper, I devoured everything from CSS
+                      to JavaScript, joining online communities and contributing
+                      to open-source projects. Each line of code wasn&apos;t
+                      just learning; it was a step towards mastering the art of
+                      front-end development. <br />
+                      Over the years, my toolkit has expanded from basic HTML
+                      and CSS to sophisticated frameworks like React and Vue.js.
+                      I specialize in translating high-fidelity designs into
+                      pixel-perfect, responsive, and accessible web interfaces.
+                      <br />
+                      My philosophy as a front-end developer centers around the
+                      user. I believe every line of code should contribute to a
+                      seamless, engaging user experience, whether it&apos;s
+                      through optimized performance or intuitive navigation.
+                      <br />
+                      As technology evolves, so does my journey. I’m currently
+                      exploring the realms of progressive web apps and looking
+                      forward to bringing more immersive and dynamic experiences
+                      to users worldwide.
                     </p>
                   </div>
                 </ScrollShadow>
