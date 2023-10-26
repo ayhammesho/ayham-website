@@ -33,13 +33,6 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-
-      #B {
-        opacity: 0;
-      }
-      #star {
-        opacity: 0;
-      }
     }
   }
 `;
@@ -52,34 +45,14 @@ const Loader = ({ finishLoading }) => {
       complete: () => finishLoading(),
     });
 
-    loader
-      .add({
-        targets: "#logo #B",
-        duration: 700,
-        easing: "easeInOutQuart",
-        opacity: 1,
-      })
-      .add({
-        targets: "#logo #star",
-        duration: 500,
-        easing: "easeInOutQuart",
-        opacity: 1,
-      })
-
-      .add({
-        targets: "#logo",
-        delay: 1000,
-        duration: 600,
-        easing: "easeInOutQuart",
-        opacity: 0,
-      })
-      .add({
-        targets: ".loader",
-        duration: 600,
-        easing: "easeInOutQuart",
-        opacity: 0,
-        zIndex: -1,
-      });
+    loader.add({
+      targets: ".loader",
+      delay: 1000,
+      duration: 600,
+      easing: "easeInOutQuart",
+      opacity: 0,
+      zIndex: -1,
+    });
   };
 
   useEffect(() => {
@@ -93,8 +66,8 @@ const Loader = ({ finishLoading }) => {
       <motion.div
         initial={{ opacity: 0 }}
         transition={{
-          duration: 1,
-          delay: 0.2,
+          duration: 0.6,
+
           type: "Tween",
 
           ease: [0.17, 0.55, 0.55, 1],
