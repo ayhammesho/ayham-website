@@ -22,17 +22,22 @@ const StyledLoader = styled.div`
 
   .logo-wrapper {
     width: max-content;
-    max-width: 1000px;
+
     transition: var(--transition);
     opacity: ${(props) => (props.isMounted ? 1 : 0)};
     svg {
       display: block;
+      max-width: 200px;
       width: 100%;
       height: 100%;
       margin: 0 auto;
       fill: none;
       user-select: none;
+
       #B {
+        opacity: 0;
+      }
+      #star {
         opacity: 0;
       }
     }
@@ -49,29 +54,28 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: "#logo path",
-        delay: 2000,
-        duration: 1500,
-        easing: "easeInOutQuart",
-        strokeDashoffset: [anime.setDashoffset, 0],
-      })
-      .add({
         targets: "#logo #B",
         duration: 700,
         easing: "easeInOutQuart",
         opacity: 1,
       })
       .add({
+        targets: "#logo #star",
+        duration: 500,
+        easing: "easeInOutQuart",
+        opacity: 1,
+      })
+
+      .add({
         targets: "#logo",
-        delay: 500,
-        duration: 300,
+        delay: 1000,
+        duration: 600,
         easing: "easeInOutQuart",
         opacity: 0,
-        scale: 0.1,
       })
       .add({
         targets: ".loader",
-        duration: 1000,
+        duration: 600,
         easing: "easeInOutQuart",
         opacity: 0,
         zIndex: -1,
@@ -89,7 +93,7 @@ const Loader = ({ finishLoading }) => {
       <motion.div
         initial={{ opacity: 0 }}
         transition={{
-          duration: 2,
+          duration: 1,
           delay: 0.2,
           type: "Tween",
 
@@ -97,9 +101,14 @@ const Loader = ({ finishLoading }) => {
         }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className={isMounted ? "logo-wrapper" : "hidden"}
+        className={
+          isMounted ? "logo-wrapper flex items-center gap-4" : "hidden"
+        }
       >
         <Logo />
+        {/* <motion.h2 className="font-madeEvolveSansEVO text-6xl text-primary-500 mt-6">
+          Ayham Mesho
+        </motion.h2> */}
       </motion.div>
     </StyledLoader>
   );

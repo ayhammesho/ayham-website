@@ -60,11 +60,17 @@ const AboutMe = () => {
         <ModalContent>
           {(onClose) => (
             <div className="flex   ">
-              <Image
-                className="max-w-md  object-contain  hidden md:block"
-                src={Me}
-                alt="Ayham Mesho - www.ayhammesho.com"
-              />
+              <div className="min-w-[450px]">
+                <Image
+                  lazyBoundary=""
+                  className="max-w-md  object-contain opacity-0 transition-opacity  hidden md:block"
+                  src={Me}
+                  alt="Ayham Mesho - www.ayhammesho.com"
+                  onLoadingComplete={(image) =>
+                    image.classList.remove("opacity-0")
+                  }
+                />
+              </div>
               <div className="py-10 px-8 ">
                 <h3 className="text-primary-500 mt-4 mb-3 font-madeEvolveSans text-3xl">
                   My Story

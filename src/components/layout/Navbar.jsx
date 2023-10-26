@@ -134,12 +134,17 @@ const Navbar = () => {
           scaleDown ? "shadow-md" : ""
         } ${!show && "-translate-y-48"} `}
       >
-        <Link
-          to={"home"}
-          smooth={true}
-          offset={0}
-          duration={500}
-          delay={300}
+        <motion.a
+          initial={{ opacity: 0, y: -200 }}
+          transition={{
+            duration: 0.3,
+            delay: 0.2,
+            type: "Tween",
+
+            ease: [0.17, 0.55, 0.55, 1],
+          }}
+          animate={{ opacity: 1, y: 0 }}
+          href="/"
           id="logo"
           className={`flex gap-[15px] items-center z-50 transition-all cursor-pointer ${
             scaleDown ? "scale-90" : ""
@@ -153,7 +158,7 @@ const Navbar = () => {
           <h2 className="text-3xl font-madeEvolveSansEVO font-medium text-primary-500 lg:block hidden">
             Ayham Mesho
           </h2>
-        </Link>
+        </motion.a>
         <div>
           <ul
             onMouseLeave={() => setSelectedTap(activeLink)}
@@ -167,7 +172,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     delay: 0.3 * item.id,
-                    ease: "easeOut",
+                    ease: [0.17, 0.55, 0.55, 1],
                   }}
                   onClick={() => setActiveLink(item.name)}
                   key={item.id}
@@ -222,15 +227,27 @@ const Navbar = () => {
         <div>
           {}
           <div>
-            <button
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                delay: 1.8,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
               onClick={onOpen}
               className="main-button !border-0  text-primary-500 rounded-lg  lg:hidden block"
             >
               <Menu className="fill-primary-500 w-12 h-12" />
-            </button>
+            </motion.button>
           </div>
 
-          <a
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 1.8,
+              ease: "easeOut",
+            }}
             href="/docs/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -238,7 +255,7 @@ const Navbar = () => {
             className="main-button px-4 py-2 cursor-pointer  border-3  border-primary-500 text-primary-500 rounded-lg font-madeEvolveSans !text-sm font-medium lg:block hidden"
           >
             Resume
-          </a>
+          </motion.a>
         </div>
       </nav>
 

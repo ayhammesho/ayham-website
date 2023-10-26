@@ -17,7 +17,7 @@ const SocialMedia = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 4,
+          delay: 0.3 * 7,
           ease: "easeOut",
         }}
       >
@@ -33,7 +33,7 @@ const SocialMedia = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 3,
+          delay: 0.3 * 6,
           ease: "easeOut",
         }}
       >
@@ -49,7 +49,7 @@ const SocialMedia = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 2,
+          delay: 0.3 * 5,
           ease: "easeOut",
         }}
       >
@@ -65,7 +65,7 @@ const SocialMedia = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 1,
+          delay: 0.3 * 4,
           ease: "easeOut",
         }}
       >
@@ -81,7 +81,7 @@ const SocialMedia = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 0,
+          delay: 0.3 * 3,
           ease: "easeOut",
         }}
         className="w-1 h-32 bg-primary-500 rounded-full"

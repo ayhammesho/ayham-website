@@ -10,7 +10,7 @@ const Email = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 1,
+          delay: 0.3 * 4,
           ease: "easeOut",
         }}
       >
@@ -26,7 +26,7 @@ const Email = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3 * 0,
+          delay: 0.3 * 3,
           ease: "easeOut",
         }}
         className="w-1 h-32 bg-primary-500 rounded-full"
