@@ -60,10 +60,9 @@ const AboutMe = () => {
         <ModalContent>
           {(onClose) => (
             <div className="flex   ">
-              <div className="min-w-[450px]">
+              <div className="min-w-[450px]   hidden md:block">
                 <Image
-                  lazyBoundary=""
-                  className="max-w-md  object-contain opacity-0 transition-opacity  hidden md:block"
+                  className="max-w-md  object-contain opacity-0 transition-opacity"
                   src={Me}
                   alt="Ayham Mesho - www.ayhammesho.com"
                   onLoadingComplete={(image) =>
