@@ -98,7 +98,7 @@ const ArchiveProjects = () => {
 
   return (
     <section className="container mx-auto   xl:max-w-[1200px]  my-24">
-      <HeadingSection>Other Simple Fun Projects</HeadingSection>
+      <HeadingSection>Other Notable Contributions</HeadingSection>
 
       <div className="grid sm:grid-cols-12 lg:grid-rows-2 lg:gap-5 gap-6 mb-12 mx-5 lg:mx-0 ">
         {isFiltered

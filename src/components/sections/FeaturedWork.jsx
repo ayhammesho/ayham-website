@@ -78,7 +78,7 @@ const FeaturedWork = () => {
       id="work"
       className=" 2xl:max-w-[1440px]  xl:max-w-5xl  mx-auto  container relative    py-36"
     >
-      <HeadingSection>Some things I&apos;ve built</HeadingSection>
+      <HeadingSection>Pieces of My Journey</HeadingSection>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}

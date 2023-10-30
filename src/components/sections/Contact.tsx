@@ -65,9 +65,8 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-10 max-w-[600px] text-slate-500"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis
-          pretium Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Nullam mollis pretium Lorem ipsum{" "}
+          Let’s chat about how my skills can bring a fresh, creative touch to
+          your team – I&apos;m just a message away!
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 100 }}

@@ -14,7 +14,7 @@ const Clients = () => {
 
   return (
     <section className="container mx-auto   max-w-[1200px]  ">
-      <HeadingSection>Happy Clients I&apos;ve worked with</HeadingSection>
+      <HeadingSection>Satisfied Client Collaborations</HeadingSection>
       <AnimatePresence>
         <div className=" flex items-center justify-evenly flex-wrap gap-12 flex-col sm:flex-row">
           <motion.div>

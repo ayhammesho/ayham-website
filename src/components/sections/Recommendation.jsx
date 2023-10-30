@@ -30,7 +30,7 @@ const Recommendation = () => {
       id="recomendations"
       className="container mx-auto   max-w-[1200px]  py-48"
     >
-      <HeadingSection>What People Says About me</HeadingSection>
+      <HeadingSection>Hear It from Them</HeadingSection>
 
       <Swiper
         style={{
@@ -158,19 +158,16 @@ const Recommendation = () => {
               viewport={{ once: false }}
               className="md:max-w-[75%] text-left  px-0"
             >
-              I am thrilled to have worked with Ayham, a developer who not only
-              adheres to a philosophy of perfection in work despite any
-              obstacles but also employs a balanced programming approach that
-              truly serves the Programming Entity in this world; his dedication
-              and skill were instrumental in helping me build my own website,
-              and I highly recommend working with him if you prioritize the
-              quality of results over the speed of delivery.
+              I am thrilled to have worked with Ayham, his dedication and skill
+              were instrumental in helping me build my own website, and I highly
+              recommend working with him if you prioritize the quality of
+              results over the speed of delivery.
               <a
                 target="_blank"
                 className=" "
                 href="https://www.linkedin.com/in/ayhammesho"
               >
-                <span className=" tracking-tighter font-semibold    border-b-2 pb-1 hover:text-primary-500 hover:border-b-primary-500 transition-all text-slate-500 ">
+                <span className=" tracking-tighter font-semibold  border-b-2 pb-1 hover:text-primary-500 hover:border-b-primary-500 transition-all text-slate-500 ">
                   &nbsp;See&nbsp;it&nbsp;on&nbsp;LinkedIn&nbsp;
                 </span>
               </a>
