@@ -17,7 +17,6 @@ const Jobs = () => {
           duration: 0.6,
           delay: 0.2,
           type: "Tween",
-
           ease: [0.17, 0.55, 0.55, 1],
         }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +27,6 @@ const Jobs = () => {
           aria-label="Options"
           color="default"
           variant="underlined"
-          onSelectionChange={() => {}}
           classNames={{
             tabList:
               " w-full relative rounded-none p-0  md:flex-col md:justify-start items-start justify-center gap-0",

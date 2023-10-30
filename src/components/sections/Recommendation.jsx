@@ -98,6 +98,15 @@ const Recommendation = () => {
               projects to life and left a lasting impression on our clients. I
               was continually impressed by his ability to think outside the box
               and find elegant solutions to complex challenges.
+              <a
+                target="_blank"
+                className=" "
+                href="https://www.linkedin.com/in/ayhammesho"
+              >
+                <span className=" tracking-tighter font-semibold    border-b-2 pb-1 hover:text-primary-500 hover:border-b-primary-500 transition-all text-slate-500 ">
+                  &nbsp;See&nbsp;it&nbsp;on&nbsp;LinkedIn&nbsp;
+                </span>
+              </a>
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}
@@ -149,12 +158,22 @@ const Recommendation = () => {
               viewport={{ once: false }}
               className="md:max-w-[75%] text-left  px-0"
             >
-              Ayham&apos;s artistic flair and innovative approach to web
-              development made him an invaluable asset to our team. His
-              eye-catching designs and user-friendly interfaces brought our
-              projects to life and left a lasting impression on our clients. I
-              was continually impressed by his ability to think outside the box
-              and find elegant solutions to complex challenges.
+              I am thrilled to have worked with Ayham, a developer who not only
+              adheres to a philosophy of perfection in work despite any
+              obstacles but also employs a balanced programming approach that
+              truly serves the Programming Entity in this world; his dedication
+              and skill were instrumental in helping me build my own website,
+              and I highly recommend working with him if you prioritize the
+              quality of results over the speed of delivery.
+              <a
+                target="_blank"
+                className=" "
+                href="https://www.linkedin.com/in/ayhammesho"
+              >
+                <span className=" tracking-tighter font-semibold    border-b-2 pb-1 hover:text-primary-500 hover:border-b-primary-500 transition-all text-slate-500 ">
+                  &nbsp;See&nbsp;it&nbsp;on&nbsp;LinkedIn&nbsp;
+                </span>
+              </a>
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}
